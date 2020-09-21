@@ -15,7 +15,7 @@ pipeline{
         stage('Test'){
             steps{
                 echo 'Running regression tests'
-                sh 'rm -f Gemfile.lock' && 'bundle exec cucumber -p ci'
+                sh 'rm -f Gemfile.lock'
             }
         }
         stage('UAT'){
